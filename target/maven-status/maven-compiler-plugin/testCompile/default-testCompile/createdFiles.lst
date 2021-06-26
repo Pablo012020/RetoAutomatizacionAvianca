@@ -1,0 +1,10 @@
+com\pruebatecnica\utilitarios\DataToFeature.class
+com\pruebatecnica\utilitarios\ExcelReader.class
+com\pruebatecnica\utilitarios\MetodosGenericos.class
+com\pruebatecnica\pageobjects\ReservarVueloPageObjects.class
+com\pruebatecnica\Hooks.class
+com\pruebatecnica\steps\ReservarVueloSteps.class
+com\pruebatecnica\utilitarios\RunnerPersonalizado.class
+com\pruebatecnica\definition\ReservarVueloDefinition.class
+com\pruebatecnica\utilitarios\BeforeSuite.class
+com\pruebatecnica\RunnerTags.class

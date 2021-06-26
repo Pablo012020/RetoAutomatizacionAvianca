@@ -1,0 +1,22 @@
+-------------------------------------------------------------------------------
+Test set: com.pruebatecnica.RunnerTags
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 145.715 s <<< FAILURE! - in com.pruebatecnica.RunnerTags
+Reservar Vuelo Avianca.Seleccion de segundo vuelo despues de la busqueda en Avianca  Time elapsed: 71.674 s  <<< ERROR!
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of ReservarVueloPageObjects.lblSeccionVuelosIda (tried for 15 second(s) with 500 milliseconds interval)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+Timed out after 17 seconds. Element not found
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'CHBOGML-102323', ip: '192.168.1.105', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
+Driver info: driver.version: unknown
+
+Reservar Vuelo Avianca.Seleccion de segundo vuelo despues de la busqueda en Avianca  Time elapsed: 68.946 s  <<< ERROR!
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of ReservarVueloPageObjects.lblSeccionVuelosIda (tried for 15 second(s) with 500 milliseconds interval)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+Timed out after 17 seconds. Element not found
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'CHBOGML-102323', ip: '192.168.1.105', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
+Driver info: driver.version: unknown
+
