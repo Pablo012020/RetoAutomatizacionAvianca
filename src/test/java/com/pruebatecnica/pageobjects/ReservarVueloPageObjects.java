@@ -111,9 +111,11 @@ public class ReservarVueloPageObjects  extends  PageObject {
 	public void selecciono_segundo_vuelo_origen_y_destino_despues_de_la_busqueda() {
 		metodosGenericos.eventoClick(buttonSegundoVueloEconomicoIdaVuelta, true);
 		metodosGenericos.eventoClick(buttonPrecioVueloEconomicoIda, true);
+		metodosGenericos.esperaCargaPagina(10);
 		metodosGenericos.esperarObjetoVisible(15, lblSeccionVuelosVuelta);
 		metodosGenericos.eventoClick(buttonSegundoVueloEconomicoIdaVuelta, true);
 		metodosGenericos.eventoClick(buttonPrecioVueloEconomicoVuelta, true);
+		metodosGenericos.esperaCargaPagina(10);
 		metodosGenericos.esperarObjetoVisible(15, lblSeccionResumenViaje);
 	}
 
