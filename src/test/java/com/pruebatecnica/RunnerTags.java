@@ -10,7 +10,6 @@ import com.pruebatecnica.utilitarios.RunnerPersonalizado;
 
 @RunWith(RunnerPersonalizado.class)
 @CucumberOptions(features="src/test/resources/features/reservarvuelo.feature", glue= {"com.pruebatecnica"}, tags="@ReservarVuelo")
-
 public class RunnerTags {
 	@BeforeSuite
 	public static void test() throws InvalidFormatException, IOException {

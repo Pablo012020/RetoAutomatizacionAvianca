@@ -24,10 +24,10 @@ public class ReservarVueloPageObjects  extends  PageObject {
 	@FindBy(xpath = "//div[@id='tabHome']//following::a[@id='reservatuvuelo']")
 	WebElementFacade lblTabReservarVuelo;
 	
-	@FindBy(xpath = "//a[contains(text(),'Ida y vuelta')]")
+	@FindBy(xpath = "//a[@role='presentation']//input[@id='radioIdayVuelta']")
 	WebElementFacade lblTabIdaYVuelta;
 	
-	@FindBy(xpath = "(//div[@class='form-group new-animate  new-focus']//input)[1]")
+	@FindBy(xpath = "(//input[@aria-label='Selecciona o autocompleta la ciudad de origen'])[2]")
 	WebElementFacade inputOrigenVuelo;
 	
 	String strButtonOrigenVuelo = "(//div[contains(@class,'bs-list-countries')])[3]//div//b[contains(text(),'strTemporal')]"; 
@@ -89,8 +89,7 @@ public class ReservarVueloPageObjects  extends  PageObject {
 
 	public void ingreso_origen_y_destino_de_vuelo_para_busqueda(Map<String, String> data) throws FileNotFoundException, IOException, ParseException {
 		metodosGenericos.eventoClick(lblTabReservarVuelo,true);
-		metodosGenericos.eventoClick(lblTabIdaYVuelta,true);
-		getDriver().navigate().refresh();
+		metodosGenericos.eventoCheck(lblTabIdaYVuelta,true,true);
 		metodosGenericos.limpiarIngresarValorInput(inputOrigenVuelo,data.get("DesdeViaje"),true);
 		metodosGenericos.eventoClick(find(By.xpath(strButtonOrigenVuelo.replace("strTemporal", data.get("DesdeViaje")))), true);
 		metodosGenericos.inputValorJavaScript(inputFinVuelo, data.get("HaciaViaje"),true);

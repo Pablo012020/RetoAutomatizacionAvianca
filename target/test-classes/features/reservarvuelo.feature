@@ -18,5 +18,4 @@ Feature: Reservar Vuelo Avianca
     Examples: 
       | inputDesdeViaje | inputHaciaViaje | inputFechaVuelo | inputDiaVueloIda | inputDiaVueloVuelta |
       ##@externaldata@src/test/resources/data/RetoTecnico.xlsx@VueloAvianca
-|Bogotá|Santa Marta|Julio 2021|1|5|
-|Cali|Cartagena|Julio 2021|16|19|
+|Bogotá|Santa Marta|Abril 2022|1|5|

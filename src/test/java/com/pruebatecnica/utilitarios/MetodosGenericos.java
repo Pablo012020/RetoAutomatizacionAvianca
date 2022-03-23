@@ -81,17 +81,27 @@ public class MetodosGenericos extends PageObject {
 	public void eventoClick(WebElementFacade xpath, boolean takeScreeshot) {
 		esperarObjetoClickable(15, xpath);
 		xpath.click();
-		if(takeScreeshot) {
-			Serenity.takeScreenshot();
-		}
+		if(takeScreeshot) {Serenity.takeScreenshot();}
 	}
 	
 	public void eventoClickJavaScript(WebElementFacade xpath, boolean takeScreeshot) {
 		esperarObjetoClickable(15, xpath);
 		JavascriptExecutor executor = (JavascriptExecutor)getDriver();
 		executor.executeScript("arguments[0].click();", xpath);
-		if(takeScreeshot) {
-			Serenity.takeScreenshot();
+		if(takeScreeshot) {Serenity.takeScreenshot();}
+	}
+
+	public void eventoCheck(WebElementFacade xpath, boolean checkear, boolean takeScreeshot) {
+		esperarObjetoClickable(15, xpath);
+		if(checkear){
+			if (!xpath.isSelected()){
+				eventoClick(xpath,false);
+			}
+		}else {
+			if (xpath.isSelected()){
+				eventoClick(xpath,false);
+			}
 		}
+		if(takeScreeshot) {Serenity.takeScreenshot();}
 	}
 }
